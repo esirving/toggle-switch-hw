@@ -1,0 +1,420 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,800');
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 300px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 0px 0px 0; /* note the padding around a left floated image */
+}
+
+.alignleft-header {
+  float: left;
+  padding: 0 0 0px 0px; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #000;
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+
+.nav{
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 20px;
+    color: #f9e42e;
+
+}
+
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  color: #033048;
+  text-align: left;
+  margin-left: 80px;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #033048;
+  text-align: left;
+  margin-left: 0px;
+  margin-top: 0px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #033048;
+  text-align: right;
+  margin-left: 0px;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  color: #fff;
+  text-align: left;
+  margin-left: 80px;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  margin-left: 0px;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+
+h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  color: #033048;
+  text-align: left;
+  margin-left: 0px;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+
+.category {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #033048;
+  text-align: left;
+  margin-left: 0px;
+  margin-top: 0px;
+  padding-top: 10px;
+}
+
+.about {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1.1;
+  color: #033048;
+  text-align: left;
+  margin-left: 0px;
+  margin-top: 0px;
+  padding-top: 10px;
+}
+
+a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #f9e42e;
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: #fff;
+  text-decoration: none;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+  width: 1120px;
+  margin: auto;
+  background-color: #f0efef;
+}
+
+header {
+}
+
+footer {
+}
+
+.row {
+  width: 100%;
+  padding: 0px 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: inline-block;
+}
+
+.col {
+  width: 100%;
+  padding: 0px 0px;
+
+}
+
+.col-footer {
+  width: 100%;
+  padding: 0px 520px;
+
+}
+
+.col-main{
+  width: 700px;
+  margin-left: 40px;
+
+}
+
+.col-side{
+  width: 240px;
+  margin-left: 40px;
+}
+
+.col-1 {
+  width: 8.33%
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+
+}
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+
+.flex-container {
+  display: flex;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.flex-item {
+  background-color: lightblue;
+  width: 100px;
+  min-height: 100px;
+  margin: 5px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.drkblu-bkg{
+    background-color: #033048;
+    width: auto;
+    height: 90px;   
+    }
+
+
+.blog1{
+  padding-left: 0px;
+  background-position: center;
+}
+
+.ad{
+  padding-top: 40px;
+}
+
+.blog-copy{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  font-size: 24px;
+  color: #121212;
+  text-align: left;
+  margin-left: 0px;
+  margin-top: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+  height: 90px;
+  transition: height 0.5s ease-in-out;
+}
+
+.read-more{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  color: #fff;
+  text-align: right;
+  margin-left: 0px;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+
+.rule{
+  border: 1px solid #033048;
+  padding-left: 0px;
+}
+
+/*FOOTER START*/
+.yllw-bkg{
+    background-color: #f9e42e;
+    width: 1120px;
+    height: 70px; 
+    margin: auto;  
+    }
+
+    .blue{
+    background-color: #033048;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    color: #f0efef;
+    text-align: center;
+    border-radius: 5px;
+    border: 0px;
+    padding: 10px 30px;
+
+}
+
+.btn-blu{
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+    padding: 20px 179px;
+
+}
+
+
+
+.gray-bkg{
+    background-color: #121212;
+    width: 1120px;
+    height: 250px;
+    margin: auto;  
+}
+.lghtgry-bkg{
+    background-color: #f0efef;
+    width: 1120px;
+    height: 70px; 
+    margin: auto; 
+}
+
+.copyright{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 9px;
+  color: #f0efef;
+  line-height: 1.4;
+  text-align: center;
+  margin-left: 0px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.grid-item {
+  display: inline-block;
+    min-height: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.twitter {
+  height: 25px;
+}
+
+.fb {
+  height: 25px;
+}
+/*FOOTER END*/
