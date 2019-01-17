@@ -1,13 +1,21 @@
+
+
+var articles = document.querySelectorAll('article');
+
+for (var i = 0; i < articles.length; i++) {
+	(function(){
+
+
 //read more toggle 
-var toggle = document.querySelector('.read-more h3');
+var toggle = articles[i].querySelector('.read-more h3');
 
 
 //.blog text
-var blog = document.querySelector('.blog-copy');
+var blog = articles[i].querySelector('.blog-copy');
 
 
 //blog text tag
-var content = document.querySelector('.blog-copy');
+var content = articles[i].querySelector('.blog-copy');
 
 var height = content.clientHeight;
 
@@ -17,14 +25,16 @@ var height = content.clientHeight;
 
 toggle.addEventListener('click', function(){
 if(blog.classList.contains('active')){
-	blog.style.height = '0px';
+	blog.style.height = '304px';
 	blog.classList.remove ('active');
 } else{
 blog.style.height = height + 'px';
 blog.classList.add ('active');
 }
 
-});
+})
+})()
+}
 
 
 // var articles = $('.blog-copy');
