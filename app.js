@@ -26,27 +26,14 @@ var height = content.clientHeight;
 toggle.addEventListener('click', function(){
 if(blog.classList.contains('active')){
 	blog.style.height = '304px';
+	toggle.innerhtml = 'Read Less'
 	blog.classList.remove ('active');
 } else{
 blog.style.height = height + 'px';
+toggle.innerhtml = 'Read More'
 blog.classList.add ('active');
 }
 
 })
 })()
 }
-
-
-// var articles = $('.blog-copy');
-
-// for (var i = 0; i < articles.length; i++) {
-// 	(function(){
-
-// 		var toggle = $(articles[i]).find('.read-more h3');
-// 		var para = $(articles[i]).find('.para');
-		
-// 		toggle.on('click', function(){
-// 		para.slideToggle();
-// });
-// })();
-// }
